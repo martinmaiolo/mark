@@ -1,0 +1,18 @@
+/* A mark tag használatával készítsünk nyomatékosítást, vagy kiemelést, mint egy szövegkiemelő. A címsor widgetben lévő szövegnek adjuk meg a Mark taget, majd definiáljuk, írjuk át az alapértelmezett stílus beállítást sajátra. 
+Kép segédlet hozzá: https://prnt.sc/wki0fa
+
+*/
+
+mark {
+    background: linear-gradient(180deg, rgba(255,255,255,0) 60%, #FFB300 60%);  /* Átmenet 180 fokban fordítjuk, rgba érték = fehér szín 60% os kitöltöttséggel, majd szintén 60% al, megadjuk a saját színünket (amilyen akarjuk, hogy legyen a kiemelés színe) */
+    text-decoration: none; /* adhatunk hozzá dekorációt ha szeretnénk */
+    border: none; /* ha szükség van rá, szegőt is megadhatunk */
+    color: #424242; /* Adjuk meg a kiemelt szöveg színét */
+    padding-left: 5px; /* eltolási értékek megadása opcionális lehetőség */
+    padding-right: 5px; /* eltolási értékek megadása opcionális lehetőség */
+}
+
+/* További megjegyzés, ha a weboldalunk háttérszíne, ahol a címsor is van, nem fehér, célszerű a fehér rgba színt átírni a háttér színre, hogy az átmenet "beolvadjon". Ha kissebb aláhúzást szeretnél, a két százalék értéket felfelé növeljük egységesen, ha nagyobbat, akkor csökkentsd. 
+
+
+/* Youtube csatornánk https://www.youtube.com/channel/UCZwvA7BXb6h1ooRqzPjwUiw */
